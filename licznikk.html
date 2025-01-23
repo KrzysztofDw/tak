@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super strona Krzysztof Dworak</title>
+    <!-- Ikona strony -->
+    <link rel="icon" href="ikona_mm.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px 10px;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            height: 70px;
+            margin-right: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        main p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        footer div {
+            margin-bottom: 15px;
+        }
+        footer h2 {
+            margin-top: 0;
+        }
+        footer form {
+            display: inline-block;
+            text-align: left;
+            max-width: 400px;
+        }
+        footer label, footer input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        footer button {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        footer button:hover {
+            background-color: #005f99;
+        }
+    </style>
+</head>
+<body>
+    <!-- Nagłówek -->
+    <header>
+        <img src="logo_2_dworak.jpg" alt="Logo Dworak">
+        <h1>Mega strona Krzysztof Dworak</h1>
+    </header>
+
+    <!-- Główna zawartość strony -->
+    <main>
+        <p></p>
+    </main>
+
+    <!-- Stopka -->
+    <footer>
+        <!-- Licznik -->
+        <div>
+            <script type="text/javascript" src="https://www.darmowylicznik.pl/licznik.php?id=12345"></script>
+        </div>
+        
+        <!-- Statystyka -->
+        <div>
+            <p>Statystyki odwiedzin: <span id="statystyka">0</span></p>
+            <script>
+                // Przykładowy skrypt do wyświetlania statystyk
+                document.getElementById('statystyka').innerText = Math.floor(Math.random() * 1000) + 1;
+            </script>
+        </div>
+
+        <!-- Formularz kontaktowy -->
+        <div>
+            <h2>Zapisz się na newsletter</h2>
+            <form>
+                <label for="email">Twój e-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Wpisz swój e-mail">
+                
+                <label for="interest">Twoje zainteresowania:</label>
+                <input type="text" id="interest" name="interest" placeholder="Wpisz swoje zainteresowania">
+                
+                <button type="submit">Zapisz się</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
+

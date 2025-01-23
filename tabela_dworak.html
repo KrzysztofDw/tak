@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela Dworak</title>
+    <style>
+        body {
+            background-color: yellow;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+        table {
+            border: 3px solid blue;
+            border-collapse: collapse;
+            width: 70%;
+            margin: 20px auto;
+            background-color: white;
+        }
+        table caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: darkblue;
+            margin-bottom: 10px;
+        }
+        table th, table td {
+            border: 1px solid blue;
+            text-align: center;
+            padding: 5px;
+        }
+        table thead {
+            background-color: lightgray;
+        }
+        table td[rowspan] {
+            background-color: lightblue;
+        }
+        a {
+            display: block;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            color: darkblue;
+            margin: 20px 0;
+        }
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tutaj będzie Tabela (już jest)</h1>
+    <table>
+        <caption>Dane procesorowe</caption>
+        <thead>
+            <tr>
+                <th>Model CPU</th>
+                <th>Taktowanie bazowe</th>
+                <th>Liczba rdzeni</th>
+                <th>Cache</th>
+                <th>Pobór mocy (TDP)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Intel Core i9-13900K</td>
+                <td>3.0 GHz</td>
+                <td>24 (8P + 16E)</td>
+                <td>36 MB</td>
+                <td>125 W</td>
+            </tr>
+            <tr>
+                <td>AMD Ryzen 9 7950X</td>
+                <td>4.5 GHz</td>
+                <td>16</td>
+                <td>64 MB</td>
+                <td>170 W</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Intel Xeon</td>
+                <td>2.1 GHz</td>
+                <td>28</td>
+                <td>38.5 MB</td>
+                <td>205 W</td>
+            </tr>
+            <tr>
+                <td>2.3 GHz</td>
+                <td>24</td>
+                <td>33 MB</td>
+                <td>180 W</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="menu_dworak.html">MENU</a>
+</body>
+</html>
